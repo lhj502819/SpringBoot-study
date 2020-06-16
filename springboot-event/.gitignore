@@ -40,6 +40,5 @@ build/
 *.tar.gz
 *.rar
 
-*.mvn
 mvnw.*
-
+.mvn
