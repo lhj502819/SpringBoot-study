@@ -4,6 +4,8 @@ import com.lhj.study.springboot.event.event.UserRegisterEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.event.EventListener;
+import org.springframework.core.Ordered;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Service;
 
 /**
@@ -13,7 +15,7 @@ import org.springframework.stereotype.Service;
  * @Date 2020/6/16
  */
 @Service
-public class CouponService {
+public class CouponService{
 
     Logger logger = LoggerFactory.getLogger(getClass());
 

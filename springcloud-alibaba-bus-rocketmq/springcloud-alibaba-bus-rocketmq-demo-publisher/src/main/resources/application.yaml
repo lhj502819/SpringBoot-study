@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: publisher-demo
+#  Bus相关外部化配置，对应配置类为BusProperties
+  cloud:
+    bus:
+      enabled: true #是否开启，默认为true
+      destination: springCloudBus #目标消息队列，默认为springCloudBus
+# rocketmq外部化配置，对应配置类为RocketMQProperties
+rocketmq:
+  name-server: 127.0.0.1:9876 # RocketMQ NameServer
